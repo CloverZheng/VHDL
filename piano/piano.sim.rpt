@@ -1,0 +1,798 @@
+Simulator report for piano
+Thu Apr 30 19:44:56 2020
+Quartus II Version 9.1 Build 350 03/24/2010 Service Pack 2 SJ Full Version
+
+
+---------------------
+; Table of Contents ;
+---------------------
+  1. Legal Notice
+  2. Simulator Summary
+  3. Simulator Settings
+  4. Simulation Waveforms
+  5. Coverage Summary
+  6. Complete 1/0-Value Coverage
+  7. Missing 1-Value Coverage
+  8. Missing 0-Value Coverage
+  9. Simulator INI Usage
+ 10. Simulator Messages
+
+
+
+----------------
+; Legal Notice ;
+----------------
+Copyright (C) 1991-2010 Altera Corporation
+Your use of Altera Corporation's design tools, logic functions 
+and other software and tools, and its AMPP partner logic 
+functions, and any output files from any of the foregoing 
+(including device programming or simulation files), and any 
+associated documentation or information are expressly subject 
+to the terms and conditions of the Altera Program License 
+Subscription Agreement, Altera MegaCore Function License 
+Agreement, or other applicable license agreement, including, 
+without limitation, that your use is for the sole purpose of 
+programming logic devices manufactured by Altera and sold by 
+Altera or its authorized distributors.  Please refer to the 
+applicable agreement for further details.
+
+
+
++--------------------------------------------+
+; Simulator Summary                          ;
++-----------------------------+--------------+
+; Type                        ; Value        ;
++-----------------------------+--------------+
+; Simulation Start Time       ; 0 ps         ;
+; Simulation End Time         ; 2.0 s        ;
+; Simulation Netlist Size     ; 604 nodes    ;
+; Simulation Coverage         ;      94.02 % ;
+; Total Number of Transitions ; 76206        ;
+; Simulation Breakpoints      ; 0            ;
+; Family                      ; Cyclone II   ;
++-----------------------------+--------------+
+
+
++--------------------------------------------------------------------------------------------------------------------------------+
+; Simulator Settings                                                                                                             ;
++--------------------------------------------------------------------------------------------+-------------------+---------------+
+; Option                                                                                     ; Setting           ; Default Value ;
++--------------------------------------------------------------------------------------------+-------------------+---------------+
+; Simulation mode                                                                            ; Functional        ; Timing        ;
+; Start time                                                                                 ; 0 ns              ; 0 ns          ;
+; Simulation results format                                                                  ; CVWF              ;               ;
+; Vector input source                                                                        ; segSimulation.vwf ;               ;
+; Add pins automatically to simulation output waveforms                                      ; On                ; On            ;
+; Check outputs                                                                              ; Off               ; Off           ;
+; Report simulation coverage                                                                 ; On                ; On            ;
+; Display complete 1/0 value coverage report                                                 ; On                ; On            ;
+; Display missing 1-value coverage report                                                    ; On                ; On            ;
+; Display missing 0-value coverage report                                                    ; On                ; On            ;
+; Detect setup and hold time violations                                                      ; Off               ; Off           ;
+; Detect glitches                                                                            ; Off               ; Off           ;
+; Disable timing delays in Timing Simulation                                                 ; Off               ; Off           ;
+; Generate Signal Activity File                                                              ; Off               ; Off           ;
+; Generate VCD File for PowerPlay Power Analyzer                                             ; Off               ; Off           ;
+; Group bus channels in simulation results                                                   ; Off               ; Off           ;
+; Preserve fewer signal transitions to reduce memory requirements                            ; On                ; On            ;
+; Trigger vector comparison with the specified mode                                          ; INPUT_EDGE        ; INPUT_EDGE    ;
+; Disable setup and hold time violations detection in input registers of bi-directional pins ; Off               ; Off           ;
+; Overwrite Waveform Inputs With Simulation Outputs                                          ; Off               ;               ;
+; Perform Glitch Filtering in Timing Simulation                                              ; Auto              ; Auto          ;
++--------------------------------------------------------------------------------------------+-------------------+---------------+
+
+
++----------------------+
+; Simulation Waveforms ;
++----------------------+
+Waveform report data cannot be output to ASCII.
+Please use Quartus II to view the waveform report data.
+
+
++--------------------------------------------------------------------+
+; Coverage Summary                                                   ;
++-----------------------------------------------------+--------------+
+; Type                                                ; Value        ;
++-----------------------------------------------------+--------------+
+; Total coverage as a percentage                      ;      94.02 % ;
+; Total nodes checked                                 ; 604          ;
+; Total output ports checked                          ; 602          ;
+; Total output ports with complete 1/0-value coverage ; 566          ;
+; Total output ports with no 1/0-value coverage       ; 35           ;
+; Total output ports with no 1-value coverage         ; 35           ;
+; Total output ports with no 0-value coverage         ; 36           ;
++-----------------------------------------------------+--------------+
+
+
+The following table displays output ports that toggle between 1 and 0 during simulation.
++------------------------------------------------------------------------------------------------------------------------------------------+
+; Complete 1/0-Value Coverage                                                                                                              ;
++-----------------------------------------------------------+-----------------------------------------------------------+------------------+
+; Node Name                                                 ; Output Port Name                                          ; Output Port Type ;
++-----------------------------------------------------------+-----------------------------------------------------------+------------------+
+; |seg|cnt_4[7]                                             ; |seg|cnt_4[7]                                             ; regout           ;
+; |seg|cnt_4[6]                                             ; |seg|cnt_4[6]                                             ; regout           ;
+; |seg|cnt_4[5]                                             ; |seg|cnt_4[5]                                             ; regout           ;
+; |seg|cnt_4[4]                                             ; |seg|cnt_4[4]                                             ; regout           ;
+; |seg|cnt_4[3]                                             ; |seg|cnt_4[3]                                             ; regout           ;
+; |seg|cnt_4[2]                                             ; |seg|cnt_4[2]                                             ; regout           ;
+; |seg|cnt_4[1]                                             ; |seg|cnt_4[1]                                             ; regout           ;
+; |seg|seg_num[3]                                           ; |seg|seg_num[3]                                           ; regout           ;
+; |seg|seg_num[2]                                           ; |seg|seg_num[2]                                           ; regout           ;
+; |seg|WideOr0                                              ; |seg|WideOr0                                              ; out0             ;
+; |seg|WideOr1                                              ; |seg|WideOr1                                              ; out0             ;
+; |seg|WideOr2                                              ; |seg|WideOr2                                              ; out0             ;
+; |seg|WideOr3                                              ; |seg|WideOr3                                              ; out0             ;
+; |seg|WideOr4                                              ; |seg|WideOr4                                              ; out0             ;
+; |seg|WideOr5                                              ; |seg|WideOr5                                              ; out0             ;
+; |seg|WideOr6                                              ; |seg|WideOr6                                              ; out0             ;
+; |seg|seg_num[0]                                           ; |seg|seg_num[0]                                           ; regout           ;
+; |seg|seg_duan[6]                                          ; |seg|seg_duan[6]                                          ; regout           ;
+; |seg|seg_duan[5]                                          ; |seg|seg_duan[5]                                          ; regout           ;
+; |seg|seg_duan[4]                                          ; |seg|seg_duan[4]                                          ; regout           ;
+; |seg|seg_duan[3]                                          ; |seg|seg_duan[3]                                          ; regout           ;
+; |seg|seg_duan[2]                                          ; |seg|seg_duan[2]                                          ; regout           ;
+; |seg|seg_duan[1]                                          ; |seg|seg_duan[1]                                          ; regout           ;
+; |seg|always6~0                                            ; |seg|always6~0                                            ; out0             ;
+; |seg|always6~1                                            ; |seg|always6~1                                            ; out0             ;
+; |seg|always6~2                                            ; |seg|always6~2                                            ; out0             ;
+; |seg|always6~3                                            ; |seg|always6~3                                            ; out0             ;
+; |seg|always6~4                                            ; |seg|always6~4                                            ; out0             ;
+; |seg|always6~5                                            ; |seg|always6~5                                            ; out0             ;
+; |seg|always6~6                                            ; |seg|always6~6                                            ; out0             ;
+; |seg|always6~7                                            ; |seg|always6~7                                            ; out0             ;
+; |seg|always6~8                                            ; |seg|always6~8                                            ; out0             ;
+; |seg|always6~9                                            ; |seg|always6~9                                            ; out0             ;
+; |seg|always6~10                                           ; |seg|always6~10                                           ; out0             ;
+; |seg|always6~11                                           ; |seg|always6~11                                           ; out0             ;
+; |seg|always6~12                                           ; |seg|always6~12                                           ; out0             ;
+; |seg|ds_shcpr~0                                           ; |seg|ds_shcpr~0                                           ; out              ;
+; |seg|seg_duan[0]                                          ; |seg|seg_duan[0]                                          ; regout           ;
+; |seg|WideOr7                                              ; |seg|WideOr7                                              ; out0             ;
+; |seg|WideOr12                                             ; |seg|WideOr12                                             ; out0             ;
+; |seg|WideOr13                                             ; |seg|WideOr13                                             ; out0             ;
+; |seg|WideOr14                                             ; |seg|WideOr14                                             ; out0             ;
+; |seg|WideOr15                                             ; |seg|WideOr15                                             ; out0             ;
+; |seg|WideOr16                                             ; |seg|WideOr16                                             ; out0             ;
+; |seg|WideOr17                                             ; |seg|WideOr17                                             ; out0             ;
+; |seg|WideOr18                                             ; |seg|WideOr18                                             ; out0             ;
+; |seg|WideOr19                                             ; |seg|WideOr19                                             ; out0             ;
+; |seg|WideOr20                                             ; |seg|WideOr20                                             ; out0             ;
+; |seg|WideOr21                                             ; |seg|WideOr21                                             ; out0             ;
+; |seg|ds_shcpr                                             ; |seg|ds_shcpr                                             ; regout           ;
+; |seg|always8~0                                            ; |seg|always8~0                                            ; out0             ;
+; |seg|always8~1                                            ; |seg|always8~1                                            ; out0             ;
+; |seg|always8~2                                            ; |seg|always8~2                                            ; out0             ;
+; |seg|always8~3                                            ; |seg|always8~3                                            ; out0             ;
+; |seg|always8~4                                            ; |seg|always8~4                                            ; out0             ;
+; |seg|always8~5                                            ; |seg|always8~5                                            ; out0             ;
+; |seg|always8~6                                            ; |seg|always8~6                                            ; out0             ;
+; |seg|always8~7                                            ; |seg|always8~7                                            ; out0             ;
+; |seg|always8~8                                            ; |seg|always8~8                                            ; out0             ;
+; |seg|always8~9                                            ; |seg|always8~9                                            ; out0             ;
+; |seg|always8~10                                           ; |seg|always8~10                                           ; out0             ;
+; |seg|ds_stcpr                                             ; |seg|ds_stcpr                                             ; regout           ;
+; |seg|always8~11                                           ; |seg|always8~11                                           ; out0             ;
+; |seg|ds_stcpr~0                                           ; |seg|ds_stcpr~0                                           ; out              ;
+; |seg|ds_stcpr~1                                           ; |seg|ds_stcpr~1                                           ; out              ;
+; |seg|ds_datar                                             ; |seg|ds_datar                                             ; regout           ;
+; |seg|clk1                                                 ; |seg|clk1                                                 ; out              ;
+; |seg|clk                                                  ; |seg|clk                                                  ; out              ;
+; |seg|idis_data[0]                                         ; |seg|idis_data[0]                                         ; out              ;
+; |seg|idis_data[1]                                         ; |seg|idis_data[1]                                         ; out              ;
+; |seg|idis_data[2]                                         ; |seg|idis_data[2]                                         ; out              ;
+; |seg|ds_stcp                                              ; |seg|ds_stcp                                              ; pin_out          ;
+; |seg|ds_shcp                                              ; |seg|ds_shcp                                              ; pin_out          ;
+; |seg|ds_data                                              ; |seg|ds_data                                              ; pin_out          ;
+; |seg|Selector0~0                                          ; |seg|Selector0~0                                          ; out0             ;
+; |seg|Selector0~1                                          ; |seg|Selector0~1                                          ; out0             ;
+; |seg|Selector0~2                                          ; |seg|Selector0~2                                          ; out0             ;
+; |seg|Selector0~3                                          ; |seg|Selector0~3                                          ; out0             ;
+; |seg|Selector0~4                                          ; |seg|Selector0~4                                          ; out0             ;
+; |seg|Selector0~5                                          ; |seg|Selector0~5                                          ; out0             ;
+; |seg|Selector0~6                                          ; |seg|Selector0~6                                          ; out0             ;
+; |seg|Selector0~7                                          ; |seg|Selector0~7                                          ; out0             ;
+; |seg|Selector0~8                                          ; |seg|Selector0~8                                          ; out0             ;
+; |seg|Selector0~9                                          ; |seg|Selector0~9                                          ; out0             ;
+; |seg|Selector0~10                                         ; |seg|Selector0~10                                         ; out0             ;
+; |seg|Selector0~11                                         ; |seg|Selector0~11                                         ; out0             ;
+; |seg|Decoder0~0                                           ; |seg|Decoder0~0                                           ; out              ;
+; |seg|Decoder0~1                                           ; |seg|Decoder0~1                                           ; out              ;
+; |seg|Decoder0~4                                           ; |seg|Decoder0~4                                           ; out              ;
+; |seg|Decoder0~5                                           ; |seg|Decoder0~5                                           ; out              ;
+; |seg|Decoder0~8                                           ; |seg|Decoder0~8                                           ; out              ;
+; |seg|Decoder0~11                                          ; |seg|Decoder0~11                                          ; out              ;
+; |seg|Decoder0~12                                          ; |seg|Decoder0~12                                          ; out              ;
+; |seg|Decoder1~0                                           ; |seg|Decoder1~0                                           ; out0             ;
+; |seg|Decoder1~1                                           ; |seg|Decoder1~1                                           ; out0             ;
+; |seg|Decoder1~2                                           ; |seg|Decoder1~2                                           ; out0             ;
+; |seg|Decoder1~3                                           ; |seg|Decoder1~3                                           ; out0             ;
+; |seg|Decoder2~0                                           ; |seg|Decoder2~0                                           ; out0             ;
+; |seg|Decoder2~1                                           ; |seg|Decoder2~1                                           ; out0             ;
+; |seg|Decoder2~2                                           ; |seg|Decoder2~2                                           ; out0             ;
+; |seg|Decoder2~3                                           ; |seg|Decoder2~3                                           ; out0             ;
+; |seg|Decoder2~4                                           ; |seg|Decoder2~4                                           ; out0             ;
+; |seg|Decoder2~5                                           ; |seg|Decoder2~5                                           ; out0             ;
+; |seg|Decoder2~6                                           ; |seg|Decoder2~6                                           ; out0             ;
+; |seg|Decoder2~7                                           ; |seg|Decoder2~7                                           ; out0             ;
+; |seg|Decoder2~8                                           ; |seg|Decoder2~8                                           ; out0             ;
+; |seg|Decoder2~9                                           ; |seg|Decoder2~9                                           ; out0             ;
+; |seg|Decoder2~10                                          ; |seg|Decoder2~10                                          ; out0             ;
+; |seg|Decoder2~11                                          ; |seg|Decoder2~11                                          ; out0             ;
+; |seg|Decoder2~12                                          ; |seg|Decoder2~12                                          ; out0             ;
+; |seg|Decoder2~13                                          ; |seg|Decoder2~13                                          ; out0             ;
+; |seg|Decoder2~14                                          ; |seg|Decoder2~14                                          ; out0             ;
+; |seg|Decoder2~15                                          ; |seg|Decoder2~15                                          ; out0             ;
+; |seg|Decoder2~16                                          ; |seg|Decoder2~16                                          ; out0             ;
+; |seg|Decoder2~17                                          ; |seg|Decoder2~17                                          ; out0             ;
+; |seg|Decoder2~18                                          ; |seg|Decoder2~18                                          ; out0             ;
+; |seg|Decoder2~19                                          ; |seg|Decoder2~19                                          ; out0             ;
+; |seg|Decoder2~20                                          ; |seg|Decoder2~20                                          ; out0             ;
+; |seg|Decoder2~21                                          ; |seg|Decoder2~21                                          ; out0             ;
+; |seg|Decoder2~22                                          ; |seg|Decoder2~22                                          ; out0             ;
+; |seg|Decoder2~23                                          ; |seg|Decoder2~23                                          ; out0             ;
+; |seg|Decoder2~24                                          ; |seg|Decoder2~24                                          ; out0             ;
+; |seg|Decoder2~25                                          ; |seg|Decoder2~25                                          ; out0             ;
+; |seg|Decoder2~26                                          ; |seg|Decoder2~26                                          ; out0             ;
+; |seg|Decoder2~27                                          ; |seg|Decoder2~27                                          ; out0             ;
+; |seg|Decoder2~28                                          ; |seg|Decoder2~28                                          ; out0             ;
+; |seg|Decoder2~29                                          ; |seg|Decoder2~29                                          ; out0             ;
+; |seg|Decoder2~30                                          ; |seg|Decoder2~30                                          ; out0             ;
+; |seg|Decoder2~31                                          ; |seg|Decoder2~31                                          ; out0             ;
+; |seg|Decoder2~32                                          ; |seg|Decoder2~32                                          ; out0             ;
+; |seg|Decoder2~33                                          ; |seg|Decoder2~33                                          ; out0             ;
+; |seg|Decoder2~34                                          ; |seg|Decoder2~34                                          ; out0             ;
+; |seg|Decoder2~35                                          ; |seg|Decoder2~35                                          ; out0             ;
+; |seg|Decoder2~36                                          ; |seg|Decoder2~36                                          ; out0             ;
+; |seg|Decoder2~37                                          ; |seg|Decoder2~37                                          ; out0             ;
+; |seg|Decoder2~38                                          ; |seg|Decoder2~38                                          ; out0             ;
+; |seg|Decoder2~39                                          ; |seg|Decoder2~39                                          ; out0             ;
+; |seg|Decoder2~40                                          ; |seg|Decoder2~40                                          ; out0             ;
+; |seg|Decoder2~41                                          ; |seg|Decoder2~41                                          ; out0             ;
+; |seg|Decoder2~42                                          ; |seg|Decoder2~42                                          ; out0             ;
+; |seg|Decoder2~43                                          ; |seg|Decoder2~43                                          ; out0             ;
+; |seg|Decoder2~44                                          ; |seg|Decoder2~44                                          ; out0             ;
+; |seg|Decoder2~45                                          ; |seg|Decoder2~45                                          ; out0             ;
+; |seg|Decoder2~46                                          ; |seg|Decoder2~46                                          ; out0             ;
+; |seg|Decoder2~47                                          ; |seg|Decoder2~47                                          ; out0             ;
+; |seg|Decoder2~48                                          ; |seg|Decoder2~48                                          ; out0             ;
+; |seg|Decoder2~49                                          ; |seg|Decoder2~49                                          ; out0             ;
+; |seg|Decoder2~50                                          ; |seg|Decoder2~50                                          ; out0             ;
+; |seg|Decoder2~51                                          ; |seg|Decoder2~51                                          ; out0             ;
+; |seg|Decoder2~52                                          ; |seg|Decoder2~52                                          ; out0             ;
+; |seg|Decoder2~53                                          ; |seg|Decoder2~53                                          ; out0             ;
+; |seg|Decoder2~54                                          ; |seg|Decoder2~54                                          ; out0             ;
+; |seg|Decoder2~55                                          ; |seg|Decoder2~55                                          ; out0             ;
+; |seg|Decoder2~56                                          ; |seg|Decoder2~56                                          ; out0             ;
+; |seg|Decoder2~57                                          ; |seg|Decoder2~57                                          ; out0             ;
+; |seg|Decoder2~58                                          ; |seg|Decoder2~58                                          ; out0             ;
+; |seg|Decoder2~59                                          ; |seg|Decoder2~59                                          ; out0             ;
+; |seg|Decoder2~60                                          ; |seg|Decoder2~60                                          ; out0             ;
+; |seg|Decoder2~61                                          ; |seg|Decoder2~61                                          ; out0             ;
+; |seg|Decoder2~62                                          ; |seg|Decoder2~62                                          ; out0             ;
+; |seg|Decoder2~63                                          ; |seg|Decoder2~63                                          ; out0             ;
+; |seg|Decoder2~64                                          ; |seg|Decoder2~64                                          ; out0             ;
+; |seg|Decoder2~65                                          ; |seg|Decoder2~65                                          ; out0             ;
+; |seg|Decoder2~66                                          ; |seg|Decoder2~66                                          ; out0             ;
+; |seg|Decoder2~67                                          ; |seg|Decoder2~67                                          ; out0             ;
+; |seg|Decoder2~68                                          ; |seg|Decoder2~68                                          ; out0             ;
+; |seg|Decoder2~69                                          ; |seg|Decoder2~69                                          ; out0             ;
+; |seg|Decoder2~70                                          ; |seg|Decoder2~70                                          ; out0             ;
+; |seg|Decoder2~71                                          ; |seg|Decoder2~71                                          ; out0             ;
+; |seg|Decoder2~72                                          ; |seg|Decoder2~72                                          ; out0             ;
+; |seg|Decoder2~73                                          ; |seg|Decoder2~73                                          ; out0             ;
+; |seg|Decoder2~74                                          ; |seg|Decoder2~74                                          ; out0             ;
+; |seg|Decoder2~75                                          ; |seg|Decoder2~75                                          ; out0             ;
+; |seg|Decoder2~76                                          ; |seg|Decoder2~76                                          ; out0             ;
+; |seg|Decoder2~77                                          ; |seg|Decoder2~77                                          ; out0             ;
+; |seg|Decoder2~78                                          ; |seg|Decoder2~78                                          ; out0             ;
+; |seg|Decoder2~79                                          ; |seg|Decoder2~79                                          ; out0             ;
+; |seg|Decoder2~80                                          ; |seg|Decoder2~80                                          ; out0             ;
+; |seg|Decoder2~81                                          ; |seg|Decoder2~81                                          ; out0             ;
+; |seg|Decoder2~82                                          ; |seg|Decoder2~82                                          ; out0             ;
+; |seg|Decoder2~83                                          ; |seg|Decoder2~83                                          ; out0             ;
+; |seg|Decoder2~84                                          ; |seg|Decoder2~84                                          ; out0             ;
+; |seg|Decoder2~85                                          ; |seg|Decoder2~85                                          ; out0             ;
+; |seg|Decoder2~86                                          ; |seg|Decoder2~86                                          ; out0             ;
+; |seg|Decoder2~87                                          ; |seg|Decoder2~87                                          ; out0             ;
+; |seg|Decoder2~88                                          ; |seg|Decoder2~88                                          ; out0             ;
+; |seg|Decoder2~89                                          ; |seg|Decoder2~89                                          ; out0             ;
+; |seg|Decoder2~90                                          ; |seg|Decoder2~90                                          ; out0             ;
+; |seg|Decoder2~91                                          ; |seg|Decoder2~91                                          ; out0             ;
+; |seg|Decoder2~92                                          ; |seg|Decoder2~92                                          ; out0             ;
+; |seg|Decoder2~93                                          ; |seg|Decoder2~93                                          ; out0             ;
+; |seg|Decoder2~94                                          ; |seg|Decoder2~94                                          ; out0             ;
+; |seg|Decoder2~95                                          ; |seg|Decoder2~95                                          ; out0             ;
+; |seg|Decoder2~96                                          ; |seg|Decoder2~96                                          ; out0             ;
+; |seg|Decoder2~97                                          ; |seg|Decoder2~97                                          ; out0             ;
+; |seg|Decoder2~98                                          ; |seg|Decoder2~98                                          ; out0             ;
+; |seg|Decoder2~99                                          ; |seg|Decoder2~99                                          ; out0             ;
+; |seg|Decoder2~100                                         ; |seg|Decoder2~100                                         ; out0             ;
+; |seg|Decoder2~101                                         ; |seg|Decoder2~101                                         ; out0             ;
+; |seg|Decoder2~102                                         ; |seg|Decoder2~102                                         ; out0             ;
+; |seg|Decoder2~103                                         ; |seg|Decoder2~103                                         ; out0             ;
+; |seg|Decoder2~104                                         ; |seg|Decoder2~104                                         ; out0             ;
+; |seg|Decoder2~105                                         ; |seg|Decoder2~105                                         ; out0             ;
+; |seg|Decoder2~106                                         ; |seg|Decoder2~106                                         ; out0             ;
+; |seg|Decoder2~107                                         ; |seg|Decoder2~107                                         ; out0             ;
+; |seg|Decoder2~108                                         ; |seg|Decoder2~108                                         ; out0             ;
+; |seg|Decoder2~109                                         ; |seg|Decoder2~109                                         ; out0             ;
+; |seg|Decoder2~110                                         ; |seg|Decoder2~110                                         ; out0             ;
+; |seg|Decoder2~111                                         ; |seg|Decoder2~111                                         ; out0             ;
+; |seg|Decoder2~112                                         ; |seg|Decoder2~112                                         ; out0             ;
+; |seg|Decoder2~113                                         ; |seg|Decoder2~113                                         ; out0             ;
+; |seg|Decoder2~114                                         ; |seg|Decoder2~114                                         ; out0             ;
+; |seg|Decoder2~115                                         ; |seg|Decoder2~115                                         ; out0             ;
+; |seg|Decoder2~116                                         ; |seg|Decoder2~116                                         ; out0             ;
+; |seg|Decoder2~117                                         ; |seg|Decoder2~117                                         ; out0             ;
+; |seg|Decoder2~118                                         ; |seg|Decoder2~118                                         ; out0             ;
+; |seg|Decoder2~119                                         ; |seg|Decoder2~119                                         ; out0             ;
+; |seg|Decoder2~120                                         ; |seg|Decoder2~120                                         ; out0             ;
+; |seg|Decoder2~121                                         ; |seg|Decoder2~121                                         ; out0             ;
+; |seg|Decoder2~122                                         ; |seg|Decoder2~122                                         ; out0             ;
+; |seg|Decoder2~123                                         ; |seg|Decoder2~123                                         ; out0             ;
+; |seg|Decoder2~124                                         ; |seg|Decoder2~124                                         ; out0             ;
+; |seg|Decoder2~125                                         ; |seg|Decoder2~125                                         ; out0             ;
+; |seg|Decoder2~126                                         ; |seg|Decoder2~126                                         ; out0             ;
+; |seg|Decoder2~127                                         ; |seg|Decoder2~127                                         ; out0             ;
+; |seg|Decoder2~128                                         ; |seg|Decoder2~128                                         ; out0             ;
+; |seg|Decoder2~129                                         ; |seg|Decoder2~129                                         ; out0             ;
+; |seg|Decoder2~130                                         ; |seg|Decoder2~130                                         ; out0             ;
+; |seg|Decoder2~131                                         ; |seg|Decoder2~131                                         ; out0             ;
+; |seg|Decoder2~132                                         ; |seg|Decoder2~132                                         ; out0             ;
+; |seg|Decoder2~133                                         ; |seg|Decoder2~133                                         ; out0             ;
+; |seg|Decoder2~134                                         ; |seg|Decoder2~134                                         ; out0             ;
+; |seg|Decoder2~135                                         ; |seg|Decoder2~135                                         ; out0             ;
+; |seg|Decoder2~136                                         ; |seg|Decoder2~136                                         ; out0             ;
+; |seg|Decoder2~137                                         ; |seg|Decoder2~137                                         ; out0             ;
+; |seg|Decoder2~138                                         ; |seg|Decoder2~138                                         ; out0             ;
+; |seg|Decoder2~139                                         ; |seg|Decoder2~139                                         ; out0             ;
+; |seg|Decoder2~140                                         ; |seg|Decoder2~140                                         ; out0             ;
+; |seg|Decoder2~141                                         ; |seg|Decoder2~141                                         ; out0             ;
+; |seg|Decoder2~142                                         ; |seg|Decoder2~142                                         ; out0             ;
+; |seg|Decoder2~143                                         ; |seg|Decoder2~143                                         ; out0             ;
+; |seg|Decoder2~144                                         ; |seg|Decoder2~144                                         ; out0             ;
+; |seg|Decoder2~145                                         ; |seg|Decoder2~145                                         ; out0             ;
+; |seg|Decoder2~146                                         ; |seg|Decoder2~146                                         ; out0             ;
+; |seg|Decoder2~147                                         ; |seg|Decoder2~147                                         ; out0             ;
+; |seg|Decoder2~148                                         ; |seg|Decoder2~148                                         ; out0             ;
+; |seg|Decoder2~149                                         ; |seg|Decoder2~149                                         ; out0             ;
+; |seg|Decoder2~150                                         ; |seg|Decoder2~150                                         ; out0             ;
+; |seg|Decoder2~151                                         ; |seg|Decoder2~151                                         ; out0             ;
+; |seg|Decoder2~152                                         ; |seg|Decoder2~152                                         ; out0             ;
+; |seg|Decoder2~153                                         ; |seg|Decoder2~153                                         ; out0             ;
+; |seg|Decoder2~154                                         ; |seg|Decoder2~154                                         ; out0             ;
+; |seg|Decoder2~155                                         ; |seg|Decoder2~155                                         ; out0             ;
+; |seg|Decoder2~156                                         ; |seg|Decoder2~156                                         ; out0             ;
+; |seg|Decoder2~157                                         ; |seg|Decoder2~157                                         ; out0             ;
+; |seg|Decoder2~158                                         ; |seg|Decoder2~158                                         ; out0             ;
+; |seg|Decoder2~159                                         ; |seg|Decoder2~159                                         ; out0             ;
+; |seg|Decoder2~160                                         ; |seg|Decoder2~160                                         ; out0             ;
+; |seg|Decoder2~161                                         ; |seg|Decoder2~161                                         ; out0             ;
+; |seg|Decoder2~162                                         ; |seg|Decoder2~162                                         ; out0             ;
+; |seg|Decoder2~163                                         ; |seg|Decoder2~163                                         ; out0             ;
+; |seg|Decoder2~164                                         ; |seg|Decoder2~164                                         ; out0             ;
+; |seg|Decoder2~165                                         ; |seg|Decoder2~165                                         ; out0             ;
+; |seg|Decoder2~166                                         ; |seg|Decoder2~166                                         ; out0             ;
+; |seg|Decoder2~167                                         ; |seg|Decoder2~167                                         ; out0             ;
+; |seg|Decoder2~168                                         ; |seg|Decoder2~168                                         ; out0             ;
+; |seg|Decoder2~169                                         ; |seg|Decoder2~169                                         ; out0             ;
+; |seg|Decoder2~170                                         ; |seg|Decoder2~170                                         ; out0             ;
+; |seg|Decoder2~171                                         ; |seg|Decoder2~171                                         ; out0             ;
+; |seg|Decoder2~172                                         ; |seg|Decoder2~172                                         ; out0             ;
+; |seg|Decoder2~173                                         ; |seg|Decoder2~173                                         ; out0             ;
+; |seg|Decoder2~174                                         ; |seg|Decoder2~174                                         ; out0             ;
+; |seg|Decoder2~175                                         ; |seg|Decoder2~175                                         ; out0             ;
+; |seg|Decoder2~176                                         ; |seg|Decoder2~176                                         ; out0             ;
+; |seg|Decoder2~177                                         ; |seg|Decoder2~177                                         ; out0             ;
+; |seg|Decoder2~178                                         ; |seg|Decoder2~178                                         ; out0             ;
+; |seg|Decoder2~179                                         ; |seg|Decoder2~179                                         ; out0             ;
+; |seg|Decoder2~180                                         ; |seg|Decoder2~180                                         ; out0             ;
+; |seg|Decoder2~181                                         ; |seg|Decoder2~181                                         ; out0             ;
+; |seg|Decoder2~182                                         ; |seg|Decoder2~182                                         ; out0             ;
+; |seg|Decoder2~183                                         ; |seg|Decoder2~183                                         ; out0             ;
+; |seg|Decoder2~184                                         ; |seg|Decoder2~184                                         ; out0             ;
+; |seg|Decoder2~185                                         ; |seg|Decoder2~185                                         ; out0             ;
+; |seg|Decoder2~186                                         ; |seg|Decoder2~186                                         ; out0             ;
+; |seg|Decoder2~187                                         ; |seg|Decoder2~187                                         ; out0             ;
+; |seg|Decoder2~188                                         ; |seg|Decoder2~188                                         ; out              ;
+; |seg|Decoder2~189                                         ; |seg|Decoder2~189                                         ; out              ;
+; |seg|Decoder2~190                                         ; |seg|Decoder2~190                                         ; out              ;
+; |seg|Decoder2~191                                         ; |seg|Decoder2~191                                         ; out              ;
+; |seg|Decoder2~192                                         ; |seg|Decoder2~192                                         ; out              ;
+; |seg|Decoder2~193                                         ; |seg|Decoder2~193                                         ; out              ;
+; |seg|Decoder2~194                                         ; |seg|Decoder2~194                                         ; out              ;
+; |seg|Decoder2~195                                         ; |seg|Decoder2~195                                         ; out              ;
+; |seg|Decoder2~196                                         ; |seg|Decoder2~196                                         ; out              ;
+; |seg|Decoder2~197                                         ; |seg|Decoder2~197                                         ; out              ;
+; |seg|Decoder2~198                                         ; |seg|Decoder2~198                                         ; out              ;
+; |seg|Decoder2~199                                         ; |seg|Decoder2~199                                         ; out              ;
+; |seg|Decoder2~200                                         ; |seg|Decoder2~200                                         ; out              ;
+; |seg|Decoder2~201                                         ; |seg|Decoder2~201                                         ; out              ;
+; |seg|Decoder2~202                                         ; |seg|Decoder2~202                                         ; out              ;
+; |seg|Decoder2~203                                         ; |seg|Decoder2~203                                         ; out              ;
+; |seg|Decoder2~204                                         ; |seg|Decoder2~204                                         ; out              ;
+; |seg|Decoder2~205                                         ; |seg|Decoder2~205                                         ; out              ;
+; |seg|Decoder2~206                                         ; |seg|Decoder2~206                                         ; out              ;
+; |seg|Decoder2~207                                         ; |seg|Decoder2~207                                         ; out              ;
+; |seg|Decoder2~208                                         ; |seg|Decoder2~208                                         ; out              ;
+; |seg|Decoder2~209                                         ; |seg|Decoder2~209                                         ; out              ;
+; |seg|Decoder2~210                                         ; |seg|Decoder2~210                                         ; out              ;
+; |seg|Decoder2~211                                         ; |seg|Decoder2~211                                         ; out              ;
+; |seg|Decoder2~212                                         ; |seg|Decoder2~212                                         ; out              ;
+; |seg|Decoder2~213                                         ; |seg|Decoder2~213                                         ; out              ;
+; |seg|Decoder2~214                                         ; |seg|Decoder2~214                                         ; out              ;
+; |seg|Decoder2~215                                         ; |seg|Decoder2~215                                         ; out              ;
+; |seg|Decoder2~216                                         ; |seg|Decoder2~216                                         ; out              ;
+; |seg|Decoder2~217                                         ; |seg|Decoder2~217                                         ; out              ;
+; |seg|Decoder2~218                                         ; |seg|Decoder2~218                                         ; out              ;
+; |seg|Decoder2~219                                         ; |seg|Decoder2~219                                         ; out              ;
+; |seg|LessThan0~0                                          ; |seg|LessThan0~0                                          ; out0             ;
+; |seg|LessThan0~1                                          ; |seg|LessThan0~1                                          ; out0             ;
+; |seg|LessThan0~2                                          ; |seg|LessThan0~2                                          ; out0             ;
+; |seg|LessThan0~3                                          ; |seg|LessThan0~3                                          ; out0             ;
+; |seg|LessThan0~4                                          ; |seg|LessThan0~4                                          ; out0             ;
+; |seg|LessThan0~5                                          ; |seg|LessThan0~5                                          ; out0             ;
+; |seg|LessThan0~6                                          ; |seg|LessThan0~6                                          ; out0             ;
+; |seg|LessThan0~7                                          ; |seg|LessThan0~7                                          ; out0             ;
+; |seg|LessThan0~8                                          ; |seg|LessThan0~8                                          ; out0             ;
+; |seg|LessThan0~9                                          ; |seg|LessThan0~9                                          ; out0             ;
+; |seg|LessThan0~10                                         ; |seg|LessThan0~10                                         ; out0             ;
+; |seg|LessThan0~11                                         ; |seg|LessThan0~11                                         ; out0             ;
+; |seg|LessThan0~12                                         ; |seg|LessThan0~12                                         ; out0             ;
+; |seg|LessThan1~0                                          ; |seg|LessThan1~0                                          ; out0             ;
+; |seg|LessThan1~1                                          ; |seg|LessThan1~1                                          ; out0             ;
+; |seg|LessThan1~2                                          ; |seg|LessThan1~2                                          ; out0             ;
+; |seg|LessThan1~3                                          ; |seg|LessThan1~3                                          ; out0             ;
+; |seg|LessThan1~4                                          ; |seg|LessThan1~4                                          ; out0             ;
+; |seg|LessThan1~5                                          ; |seg|LessThan1~5                                          ; out0             ;
+; |seg|LessThan1~6                                          ; |seg|LessThan1~6                                          ; out0             ;
+; |seg|LessThan1~7                                          ; |seg|LessThan1~7                                          ; out0             ;
+; |seg|LessThan1~8                                          ; |seg|LessThan1~8                                          ; out0             ;
+; |seg|LessThan2~0                                          ; |seg|LessThan2~0                                          ; out0             ;
+; |seg|LessThan2~1                                          ; |seg|LessThan2~1                                          ; out0             ;
+; |seg|LessThan2~2                                          ; |seg|LessThan2~2                                          ; out0             ;
+; |seg|LessThan2~3                                          ; |seg|LessThan2~3                                          ; out0             ;
+; |seg|LessThan2~4                                          ; |seg|LessThan2~4                                          ; out0             ;
+; |seg|LessThan2~5                                          ; |seg|LessThan2~5                                          ; out0             ;
+; |seg|LessThan2~6                                          ; |seg|LessThan2~6                                          ; out0             ;
+; |seg|LessThan2~7                                          ; |seg|LessThan2~7                                          ; out0             ;
+; |seg|LessThan2~8                                          ; |seg|LessThan2~8                                          ; out0             ;
+; |seg|LessThan2~9                                          ; |seg|LessThan2~9                                          ; out0             ;
+; |seg|LessThan2~10                                         ; |seg|LessThan2~10                                         ; out0             ;
+; |seg|LessThan2~11                                         ; |seg|LessThan2~11                                         ; out0             ;
+; |seg|LessThan3~0                                          ; |seg|LessThan3~0                                          ; out0             ;
+; |seg|LessThan3~1                                          ; |seg|LessThan3~1                                          ; out0             ;
+; |seg|LessThan3~2                                          ; |seg|LessThan3~2                                          ; out0             ;
+; |seg|LessThan3~3                                          ; |seg|LessThan3~3                                          ; out0             ;
+; |seg|LessThan3~4                                          ; |seg|LessThan3~4                                          ; out0             ;
+; |seg|LessThan3~5                                          ; |seg|LessThan3~5                                          ; out0             ;
+; |seg|LessThan3~6                                          ; |seg|LessThan3~6                                          ; out0             ;
+; |seg|LessThan3~7                                          ; |seg|LessThan3~7                                          ; out0             ;
+; |seg|LessThan3~8                                          ; |seg|LessThan3~8                                          ; out0             ;
+; |seg|LessThan4~0                                          ; |seg|LessThan4~0                                          ; out0             ;
+; |seg|LessThan4~1                                          ; |seg|LessThan4~1                                          ; out0             ;
+; |seg|LessThan4~2                                          ; |seg|LessThan4~2                                          ; out0             ;
+; |seg|LessThan4~3                                          ; |seg|LessThan4~3                                          ; out0             ;
+; |seg|LessThan4~4                                          ; |seg|LessThan4~4                                          ; out0             ;
+; |seg|LessThan4~5                                          ; |seg|LessThan4~5                                          ; out0             ;
+; |seg|LessThan4~6                                          ; |seg|LessThan4~6                                          ; out0             ;
+; |seg|LessThan4~7                                          ; |seg|LessThan4~7                                          ; out0             ;
+; |seg|LessThan4~8                                          ; |seg|LessThan4~8                                          ; out0             ;
+; |seg|LessThan4~9                                          ; |seg|LessThan4~9                                          ; out0             ;
+; |seg|LessThan4~10                                         ; |seg|LessThan4~10                                         ; out0             ;
+; |seg|LessThan5~0                                          ; |seg|LessThan5~0                                          ; out0             ;
+; |seg|LessThan5~1                                          ; |seg|LessThan5~1                                          ; out0             ;
+; |seg|LessThan5~2                                          ; |seg|LessThan5~2                                          ; out0             ;
+; |seg|LessThan5~3                                          ; |seg|LessThan5~3                                          ; out0             ;
+; |seg|LessThan5~4                                          ; |seg|LessThan5~4                                          ; out0             ;
+; |seg|LessThan5~5                                          ; |seg|LessThan5~5                                          ; out0             ;
+; |seg|LessThan5~6                                          ; |seg|LessThan5~6                                          ; out0             ;
+; |seg|LessThan5~7                                          ; |seg|LessThan5~7                                          ; out0             ;
+; |seg|LessThan5~8                                          ; |seg|LessThan5~8                                          ; out0             ;
+; |seg|LessThan5~9                                          ; |seg|LessThan5~9                                          ; out0             ;
+; |seg|LessThan5~10                                         ; |seg|LessThan5~10                                         ; out0             ;
+; |seg|LessThan6~0                                          ; |seg|LessThan6~0                                          ; out0             ;
+; |seg|LessThan6~1                                          ; |seg|LessThan6~1                                          ; out0             ;
+; |seg|LessThan6~2                                          ; |seg|LessThan6~2                                          ; out0             ;
+; |seg|LessThan6~3                                          ; |seg|LessThan6~3                                          ; out0             ;
+; |seg|LessThan6~4                                          ; |seg|LessThan6~4                                          ; out0             ;
+; |seg|LessThan6~5                                          ; |seg|LessThan6~5                                          ; out0             ;
+; |seg|LessThan6~6                                          ; |seg|LessThan6~6                                          ; out0             ;
+; |seg|LessThan6~7                                          ; |seg|LessThan6~7                                          ; out0             ;
+; |seg|LessThan6~8                                          ; |seg|LessThan6~8                                          ; out0             ;
+; |seg|LessThan6~9                                          ; |seg|LessThan6~9                                          ; out0             ;
+; |seg|LessThan6~10                                         ; |seg|LessThan6~10                                         ; out0             ;
+; |seg|LessThan7~0                                          ; |seg|LessThan7~0                                          ; out0             ;
+; |seg|LessThan7~1                                          ; |seg|LessThan7~1                                          ; out0             ;
+; |seg|LessThan7~2                                          ; |seg|LessThan7~2                                          ; out0             ;
+; |seg|LessThan7~3                                          ; |seg|LessThan7~3                                          ; out0             ;
+; |seg|LessThan7~4                                          ; |seg|LessThan7~4                                          ; out0             ;
+; |seg|LessThan7~5                                          ; |seg|LessThan7~5                                          ; out0             ;
+; |seg|LessThan7~6                                          ; |seg|LessThan7~6                                          ; out0             ;
+; |seg|LessThan7~7                                          ; |seg|LessThan7~7                                          ; out0             ;
+; |seg|LessThan7~8                                          ; |seg|LessThan7~8                                          ; out0             ;
+; |seg|LessThan8~0                                          ; |seg|LessThan8~0                                          ; out0             ;
+; |seg|LessThan8~1                                          ; |seg|LessThan8~1                                          ; out0             ;
+; |seg|LessThan8~2                                          ; |seg|LessThan8~2                                          ; out0             ;
+; |seg|LessThan8~3                                          ; |seg|LessThan8~3                                          ; out0             ;
+; |seg|LessThan8~4                                          ; |seg|LessThan8~4                                          ; out0             ;
+; |seg|LessThan8~5                                          ; |seg|LessThan8~5                                          ; out0             ;
+; |seg|LessThan8~6                                          ; |seg|LessThan8~6                                          ; out0             ;
+; |seg|LessThan8~7                                          ; |seg|LessThan8~7                                          ; out0             ;
+; |seg|LessThan8~8                                          ; |seg|LessThan8~8                                          ; out0             ;
+; |seg|LessThan8~9                                          ; |seg|LessThan8~9                                          ; out0             ;
+; |seg|LessThan8~10                                         ; |seg|LessThan8~10                                         ; out0             ;
+; |seg|LessThan8~11                                         ; |seg|LessThan8~11                                         ; out0             ;
+; |seg|LessThan9~0                                          ; |seg|LessThan9~0                                          ; out0             ;
+; |seg|LessThan9~1                                          ; |seg|LessThan9~1                                          ; out0             ;
+; |seg|LessThan9~2                                          ; |seg|LessThan9~2                                          ; out0             ;
+; |seg|LessThan9~3                                          ; |seg|LessThan9~3                                          ; out0             ;
+; |seg|LessThan9~4                                          ; |seg|LessThan9~4                                          ; out0             ;
+; |seg|LessThan9~5                                          ; |seg|LessThan9~5                                          ; out0             ;
+; |seg|LessThan9~6                                          ; |seg|LessThan9~6                                          ; out0             ;
+; |seg|LessThan9~7                                          ; |seg|LessThan9~7                                          ; out0             ;
+; |seg|LessThan9~8                                          ; |seg|LessThan9~8                                          ; out0             ;
+; |seg|LessThan9~9                                          ; |seg|LessThan9~9                                          ; out0             ;
+; |seg|LessThan10~0                                         ; |seg|LessThan10~0                                         ; out0             ;
+; |seg|LessThan10~1                                         ; |seg|LessThan10~1                                         ; out0             ;
+; |seg|LessThan10~2                                         ; |seg|LessThan10~2                                         ; out0             ;
+; |seg|LessThan10~3                                         ; |seg|LessThan10~3                                         ; out0             ;
+; |seg|LessThan10~4                                         ; |seg|LessThan10~4                                         ; out0             ;
+; |seg|LessThan10~5                                         ; |seg|LessThan10~5                                         ; out0             ;
+; |seg|LessThan10~6                                         ; |seg|LessThan10~6                                         ; out0             ;
+; |seg|LessThan10~7                                         ; |seg|LessThan10~7                                         ; out0             ;
+; |seg|LessThan10~8                                         ; |seg|LessThan10~8                                         ; out0             ;
+; |seg|LessThan10~9                                         ; |seg|LessThan10~9                                         ; out0             ;
+; |seg|LessThan11~0                                         ; |seg|LessThan11~0                                         ; out0             ;
+; |seg|LessThan11~1                                         ; |seg|LessThan11~1                                         ; out0             ;
+; |seg|LessThan11~2                                         ; |seg|LessThan11~2                                         ; out0             ;
+; |seg|LessThan11~3                                         ; |seg|LessThan11~3                                         ; out0             ;
+; |seg|LessThan11~4                                         ; |seg|LessThan11~4                                         ; out0             ;
+; |seg|LessThan11~5                                         ; |seg|LessThan11~5                                         ; out0             ;
+; |seg|LessThan11~6                                         ; |seg|LessThan11~6                                         ; out0             ;
+; |seg|LessThan11~7                                         ; |seg|LessThan11~7                                         ; out0             ;
+; |seg|LessThan11~8                                         ; |seg|LessThan11~8                                         ; out0             ;
+; |seg|LessThan11~9                                         ; |seg|LessThan11~9                                         ; out0             ;
+; |seg|LessThan11~10                                        ; |seg|LessThan11~10                                        ; out0             ;
+; |seg|LessThan12~0                                         ; |seg|LessThan12~0                                         ; out0             ;
+; |seg|LessThan12~1                                         ; |seg|LessThan12~1                                         ; out0             ;
+; |seg|LessThan12~2                                         ; |seg|LessThan12~2                                         ; out0             ;
+; |seg|LessThan12~3                                         ; |seg|LessThan12~3                                         ; out0             ;
+; |seg|LessThan12~4                                         ; |seg|LessThan12~4                                         ; out0             ;
+; |seg|LessThan12~5                                         ; |seg|LessThan12~5                                         ; out0             ;
+; |seg|LessThan12~6                                         ; |seg|LessThan12~6                                         ; out0             ;
+; |seg|LessThan12~7                                         ; |seg|LessThan12~7                                         ; out0             ;
+; |seg|LessThan12~8                                         ; |seg|LessThan12~8                                         ; out0             ;
+; |seg|LessThan12~9                                         ; |seg|LessThan12~9                                         ; out0             ;
+; |seg|LessThan13~0                                         ; |seg|LessThan13~0                                         ; out0             ;
+; |seg|LessThan13~1                                         ; |seg|LessThan13~1                                         ; out0             ;
+; |seg|LessThan13~2                                         ; |seg|LessThan13~2                                         ; out0             ;
+; |seg|LessThan13~3                                         ; |seg|LessThan13~3                                         ; out0             ;
+; |seg|LessThan13~4                                         ; |seg|LessThan13~4                                         ; out0             ;
+; |seg|LessThan13~5                                         ; |seg|LessThan13~5                                         ; out0             ;
+; |seg|LessThan13~6                                         ; |seg|LessThan13~6                                         ; out0             ;
+; |seg|LessThan13~7                                         ; |seg|LessThan13~7                                         ; out0             ;
+; |seg|LessThan13~8                                         ; |seg|LessThan13~8                                         ; out0             ;
+; |seg|LessThan13~9                                         ; |seg|LessThan13~9                                         ; out0             ;
+; |seg|LessThan13~10                                        ; |seg|LessThan13~10                                        ; out0             ;
+; |seg|LessThan13~11                                        ; |seg|LessThan13~11                                        ; out0             ;
+; |seg|Add0~0                                               ; |seg|Add0~0                                               ; out0             ;
+; |seg|Add0~1                                               ; |seg|Add0~1                                               ; out0             ;
+; |seg|Add0~2                                               ; |seg|Add0~2                                               ; out0             ;
+; |seg|Add0~3                                               ; |seg|Add0~3                                               ; out0             ;
+; |seg|Add0~4                                               ; |seg|Add0~4                                               ; out0             ;
+; |seg|Add0~5                                               ; |seg|Add0~5                                               ; out0             ;
+; |seg|Add0~6                                               ; |seg|Add0~6                                               ; out0             ;
+; |seg|Add0~7                                               ; |seg|Add0~7                                               ; out0             ;
+; |seg|Add0~8                                               ; |seg|Add0~8                                               ; out0             ;
+; |seg|Add0~9                                               ; |seg|Add0~9                                               ; out0             ;
+; |seg|Add0~10                                              ; |seg|Add0~10                                              ; out0             ;
+; |seg|Add0~11                                              ; |seg|Add0~11                                              ; out0             ;
+; |seg|Add0~12                                              ; |seg|Add0~12                                              ; out0             ;
+; |seg|Equal0~0                                             ; |seg|Equal0~0                                             ; out0             ;
+; |seg|Equal1~0                                             ; |seg|Equal1~0                                             ; out0             ;
+; |seg|Equal2~0                                             ; |seg|Equal2~0                                             ; out0             ;
+; |seg|Equal3~0                                             ; |seg|Equal3~0                                             ; out0             ;
+; |seg|Equal4~0                                             ; |seg|Equal4~0                                             ; out0             ;
+; |seg|Equal5~0                                             ; |seg|Equal5~0                                             ; out0             ;
+; |seg|Equal6~0                                             ; |seg|Equal6~0                                             ; out0             ;
+; |seg|Equal7~0                                             ; |seg|Equal7~0                                             ; out0             ;
+; |seg|Equal8~0                                             ; |seg|Equal8~0                                             ; out0             ;
+; |seg|Equal9~0                                             ; |seg|Equal9~0                                             ; out0             ;
+; |seg|Equal10~0                                            ; |seg|Equal10~0                                            ; out0             ;
+; |seg|Equal11~0                                            ; |seg|Equal11~0                                            ; out0             ;
+; |seg|Equal12~0                                            ; |seg|Equal12~0                                            ; out0             ;
+; |seg|Equal13~0                                            ; |seg|Equal13~0                                            ; out0             ;
+; |seg|lpm_mux:Mux3|mux_umc:auto_generated|_~1              ; |seg|lpm_mux:Mux3|mux_umc:auto_generated|_~1              ; out0             ;
+; |seg|lpm_mux:Mux3|mux_umc:auto_generated|_~2              ; |seg|lpm_mux:Mux3|mux_umc:auto_generated|_~2              ; out0             ;
+; |seg|lpm_mux:Mux3|mux_umc:auto_generated|_~3              ; |seg|lpm_mux:Mux3|mux_umc:auto_generated|_~3              ; out0             ;
+; |seg|lpm_mux:Mux3|mux_umc:auto_generated|_~4              ; |seg|lpm_mux:Mux3|mux_umc:auto_generated|_~4              ; out0             ;
+; |seg|lpm_mux:Mux3|mux_umc:auto_generated|_~5              ; |seg|lpm_mux:Mux3|mux_umc:auto_generated|_~5              ; out0             ;
+; |seg|lpm_mux:Mux3|mux_umc:auto_generated|_~6              ; |seg|lpm_mux:Mux3|mux_umc:auto_generated|_~6              ; out0             ;
+; |seg|lpm_mux:Mux3|mux_umc:auto_generated|_~7              ; |seg|lpm_mux:Mux3|mux_umc:auto_generated|_~7              ; out0             ;
+; |seg|lpm_mux:Mux3|mux_umc:auto_generated|_~8              ; |seg|lpm_mux:Mux3|mux_umc:auto_generated|_~8              ; out0             ;
+; |seg|lpm_mux:Mux3|mux_umc:auto_generated|_~9              ; |seg|lpm_mux:Mux3|mux_umc:auto_generated|_~9              ; out0             ;
+; |seg|lpm_mux:Mux3|mux_umc:auto_generated|_~10             ; |seg|lpm_mux:Mux3|mux_umc:auto_generated|_~10             ; out0             ;
+; |seg|lpm_mux:Mux3|mux_umc:auto_generated|_~11             ; |seg|lpm_mux:Mux3|mux_umc:auto_generated|_~11             ; out0             ;
+; |seg|lpm_mux:Mux3|mux_umc:auto_generated|_~12             ; |seg|lpm_mux:Mux3|mux_umc:auto_generated|_~12             ; out0             ;
+; |seg|lpm_mux:Mux3|mux_umc:auto_generated|_~13             ; |seg|lpm_mux:Mux3|mux_umc:auto_generated|_~13             ; out0             ;
+; |seg|lpm_mux:Mux3|mux_umc:auto_generated|_~14             ; |seg|lpm_mux:Mux3|mux_umc:auto_generated|_~14             ; out0             ;
+; |seg|lpm_mux:Mux3|mux_umc:auto_generated|_~15             ; |seg|lpm_mux:Mux3|mux_umc:auto_generated|_~15             ; out0             ;
+; |seg|lpm_mux:Mux3|mux_umc:auto_generated|_~16             ; |seg|lpm_mux:Mux3|mux_umc:auto_generated|_~16             ; out0             ;
+; |seg|lpm_mux:Mux3|mux_umc:auto_generated|_~17             ; |seg|lpm_mux:Mux3|mux_umc:auto_generated|_~17             ; out0             ;
+; |seg|lpm_mux:Mux3|mux_umc:auto_generated|result_node[0]~1 ; |seg|lpm_mux:Mux3|mux_umc:auto_generated|result_node[0]~1 ; out0             ;
+; |seg|lpm_mux:Mux3|mux_umc:auto_generated|result_node[0]   ; |seg|lpm_mux:Mux3|mux_umc:auto_generated|result_node[0]   ; out0             ;
+; |seg|lpm_mux:Mux2|mux_umc:auto_generated|_~1              ; |seg|lpm_mux:Mux2|mux_umc:auto_generated|_~1              ; out0             ;
+; |seg|lpm_mux:Mux2|mux_umc:auto_generated|_~2              ; |seg|lpm_mux:Mux2|mux_umc:auto_generated|_~2              ; out0             ;
+; |seg|lpm_mux:Mux2|mux_umc:auto_generated|_~3              ; |seg|lpm_mux:Mux2|mux_umc:auto_generated|_~3              ; out0             ;
+; |seg|lpm_mux:Mux2|mux_umc:auto_generated|_~5              ; |seg|lpm_mux:Mux2|mux_umc:auto_generated|_~5              ; out0             ;
+; |seg|lpm_mux:Mux2|mux_umc:auto_generated|_~6              ; |seg|lpm_mux:Mux2|mux_umc:auto_generated|_~6              ; out0             ;
+; |seg|lpm_mux:Mux2|mux_umc:auto_generated|_~7              ; |seg|lpm_mux:Mux2|mux_umc:auto_generated|_~7              ; out0             ;
+; |seg|lpm_mux:Mux2|mux_umc:auto_generated|_~8              ; |seg|lpm_mux:Mux2|mux_umc:auto_generated|_~8              ; out0             ;
+; |seg|lpm_mux:Mux2|mux_umc:auto_generated|_~9              ; |seg|lpm_mux:Mux2|mux_umc:auto_generated|_~9              ; out0             ;
+; |seg|lpm_mux:Mux2|mux_umc:auto_generated|_~10             ; |seg|lpm_mux:Mux2|mux_umc:auto_generated|_~10             ; out0             ;
+; |seg|lpm_mux:Mux2|mux_umc:auto_generated|_~11             ; |seg|lpm_mux:Mux2|mux_umc:auto_generated|_~11             ; out0             ;
+; |seg|lpm_mux:Mux2|mux_umc:auto_generated|_~13             ; |seg|lpm_mux:Mux2|mux_umc:auto_generated|_~13             ; out0             ;
+; |seg|lpm_mux:Mux2|mux_umc:auto_generated|_~14             ; |seg|lpm_mux:Mux2|mux_umc:auto_generated|_~14             ; out0             ;
+; |seg|lpm_mux:Mux2|mux_umc:auto_generated|_~15             ; |seg|lpm_mux:Mux2|mux_umc:auto_generated|_~15             ; out0             ;
+; |seg|lpm_mux:Mux2|mux_umc:auto_generated|_~16             ; |seg|lpm_mux:Mux2|mux_umc:auto_generated|_~16             ; out0             ;
+; |seg|lpm_mux:Mux2|mux_umc:auto_generated|_~17             ; |seg|lpm_mux:Mux2|mux_umc:auto_generated|_~17             ; out0             ;
+; |seg|lpm_mux:Mux1|mux_umc:auto_generated|_~1              ; |seg|lpm_mux:Mux1|mux_umc:auto_generated|_~1              ; out0             ;
+; |seg|lpm_mux:Mux1|mux_umc:auto_generated|_~2              ; |seg|lpm_mux:Mux1|mux_umc:auto_generated|_~2              ; out0             ;
+; |seg|lpm_mux:Mux1|mux_umc:auto_generated|_~3              ; |seg|lpm_mux:Mux1|mux_umc:auto_generated|_~3              ; out0             ;
+; |seg|lpm_mux:Mux1|mux_umc:auto_generated|_~4              ; |seg|lpm_mux:Mux1|mux_umc:auto_generated|_~4              ; out0             ;
+; |seg|lpm_mux:Mux1|mux_umc:auto_generated|_~5              ; |seg|lpm_mux:Mux1|mux_umc:auto_generated|_~5              ; out0             ;
+; |seg|lpm_mux:Mux1|mux_umc:auto_generated|_~6              ; |seg|lpm_mux:Mux1|mux_umc:auto_generated|_~6              ; out0             ;
+; |seg|lpm_mux:Mux1|mux_umc:auto_generated|_~7              ; |seg|lpm_mux:Mux1|mux_umc:auto_generated|_~7              ; out0             ;
+; |seg|lpm_mux:Mux1|mux_umc:auto_generated|_~8              ; |seg|lpm_mux:Mux1|mux_umc:auto_generated|_~8              ; out0             ;
+; |seg|lpm_mux:Mux1|mux_umc:auto_generated|_~9              ; |seg|lpm_mux:Mux1|mux_umc:auto_generated|_~9              ; out0             ;
+; |seg|lpm_mux:Mux1|mux_umc:auto_generated|_~10             ; |seg|lpm_mux:Mux1|mux_umc:auto_generated|_~10             ; out0             ;
+; |seg|lpm_mux:Mux1|mux_umc:auto_generated|_~11             ; |seg|lpm_mux:Mux1|mux_umc:auto_generated|_~11             ; out0             ;
+; |seg|lpm_mux:Mux1|mux_umc:auto_generated|_~12             ; |seg|lpm_mux:Mux1|mux_umc:auto_generated|_~12             ; out0             ;
+; |seg|lpm_mux:Mux1|mux_umc:auto_generated|_~13             ; |seg|lpm_mux:Mux1|mux_umc:auto_generated|_~13             ; out0             ;
+; |seg|lpm_mux:Mux1|mux_umc:auto_generated|_~14             ; |seg|lpm_mux:Mux1|mux_umc:auto_generated|_~14             ; out0             ;
+; |seg|lpm_mux:Mux1|mux_umc:auto_generated|_~15             ; |seg|lpm_mux:Mux1|mux_umc:auto_generated|_~15             ; out0             ;
+; |seg|lpm_mux:Mux1|mux_umc:auto_generated|_~16             ; |seg|lpm_mux:Mux1|mux_umc:auto_generated|_~16             ; out0             ;
+; |seg|lpm_mux:Mux1|mux_umc:auto_generated|_~17             ; |seg|lpm_mux:Mux1|mux_umc:auto_generated|_~17             ; out0             ;
+; |seg|lpm_mux:Mux1|mux_umc:auto_generated|result_node[0]~1 ; |seg|lpm_mux:Mux1|mux_umc:auto_generated|result_node[0]~1 ; out0             ;
+; |seg|lpm_mux:Mux1|mux_umc:auto_generated|result_node[0]   ; |seg|lpm_mux:Mux1|mux_umc:auto_generated|result_node[0]   ; out0             ;
+; |seg|lpm_mux:Mux0|mux_umc:auto_generated|_~1              ; |seg|lpm_mux:Mux0|mux_umc:auto_generated|_~1              ; out0             ;
+; |seg|lpm_mux:Mux0|mux_umc:auto_generated|_~2              ; |seg|lpm_mux:Mux0|mux_umc:auto_generated|_~2              ; out0             ;
+; |seg|lpm_mux:Mux0|mux_umc:auto_generated|_~3              ; |seg|lpm_mux:Mux0|mux_umc:auto_generated|_~3              ; out0             ;
+; |seg|lpm_mux:Mux0|mux_umc:auto_generated|_~4              ; |seg|lpm_mux:Mux0|mux_umc:auto_generated|_~4              ; out0             ;
+; |seg|lpm_mux:Mux0|mux_umc:auto_generated|_~5              ; |seg|lpm_mux:Mux0|mux_umc:auto_generated|_~5              ; out0             ;
+; |seg|lpm_mux:Mux0|mux_umc:auto_generated|_~6              ; |seg|lpm_mux:Mux0|mux_umc:auto_generated|_~6              ; out0             ;
+; |seg|lpm_mux:Mux0|mux_umc:auto_generated|_~7              ; |seg|lpm_mux:Mux0|mux_umc:auto_generated|_~7              ; out0             ;
+; |seg|lpm_mux:Mux0|mux_umc:auto_generated|_~8              ; |seg|lpm_mux:Mux0|mux_umc:auto_generated|_~8              ; out0             ;
+; |seg|lpm_mux:Mux0|mux_umc:auto_generated|_~9              ; |seg|lpm_mux:Mux0|mux_umc:auto_generated|_~9              ; out0             ;
+; |seg|lpm_mux:Mux0|mux_umc:auto_generated|_~10             ; |seg|lpm_mux:Mux0|mux_umc:auto_generated|_~10             ; out0             ;
+; |seg|lpm_mux:Mux0|mux_umc:auto_generated|_~11             ; |seg|lpm_mux:Mux0|mux_umc:auto_generated|_~11             ; out0             ;
+; |seg|lpm_mux:Mux0|mux_umc:auto_generated|_~12             ; |seg|lpm_mux:Mux0|mux_umc:auto_generated|_~12             ; out0             ;
+; |seg|lpm_mux:Mux0|mux_umc:auto_generated|_~13             ; |seg|lpm_mux:Mux0|mux_umc:auto_generated|_~13             ; out0             ;
+; |seg|lpm_mux:Mux0|mux_umc:auto_generated|_~14             ; |seg|lpm_mux:Mux0|mux_umc:auto_generated|_~14             ; out0             ;
+; |seg|lpm_mux:Mux0|mux_umc:auto_generated|_~15             ; |seg|lpm_mux:Mux0|mux_umc:auto_generated|_~15             ; out0             ;
+; |seg|lpm_mux:Mux0|mux_umc:auto_generated|_~16             ; |seg|lpm_mux:Mux0|mux_umc:auto_generated|_~16             ; out0             ;
+; |seg|lpm_mux:Mux0|mux_umc:auto_generated|_~17             ; |seg|lpm_mux:Mux0|mux_umc:auto_generated|_~17             ; out0             ;
+; |seg|lpm_mux:Mux0|mux_umc:auto_generated|result_node[0]~1 ; |seg|lpm_mux:Mux0|mux_umc:auto_generated|result_node[0]~1 ; out0             ;
+; |seg|lpm_mux:Mux0|mux_umc:auto_generated|result_node[0]   ; |seg|lpm_mux:Mux0|mux_umc:auto_generated|result_node[0]   ; out0             ;
++-----------------------------------------------------------+-----------------------------------------------------------+------------------+
+
+
+The following table displays output ports that do not toggle to 1 during simulation.
++------------------------------------------------------------------------------------------------------------------------------------------+
+; Missing 1-Value Coverage                                                                                                                 ;
++-----------------------------------------------------------+-----------------------------------------------------------+------------------+
+; Node Name                                                 ; Output Port Name                                          ; Output Port Type ;
++-----------------------------------------------------------+-----------------------------------------------------------+------------------+
+; |seg|seg_num[1]                                           ; |seg|seg_num[1]                                           ; regout           ;
+; |seg|rst_n                                                ; |seg|rst_n                                                ; out              ;
+; |seg|en                                                   ; |seg|en                                                   ; out              ;
+; |seg|idis_data[4]                                         ; |seg|idis_data[4]                                         ; out              ;
+; |seg|idis_data[5]                                         ; |seg|idis_data[5]                                         ; out              ;
+; |seg|idis_data[6]                                         ; |seg|idis_data[6]                                         ; out              ;
+; |seg|idis_data[7]                                         ; |seg|idis_data[7]                                         ; out              ;
+; |seg|idis_data[8]                                         ; |seg|idis_data[8]                                         ; out              ;
+; |seg|idis_data[9]                                         ; |seg|idis_data[9]                                         ; out              ;
+; |seg|idis_data[10]                                        ; |seg|idis_data[10]                                        ; out              ;
+; |seg|idis_data[11]                                        ; |seg|idis_data[11]                                        ; out              ;
+; |seg|idis_data[12]                                        ; |seg|idis_data[12]                                        ; out              ;
+; |seg|idis_data[13]                                        ; |seg|idis_data[13]                                        ; out              ;
+; |seg|idis_data[14]                                        ; |seg|idis_data[14]                                        ; out              ;
+; |seg|idis_data[15]                                        ; |seg|idis_data[15]                                        ; out              ;
+; |seg|Decoder0~2                                           ; |seg|Decoder0~2                                           ; out              ;
+; |seg|Decoder0~3                                           ; |seg|Decoder0~3                                           ; out              ;
+; |seg|Decoder0~6                                           ; |seg|Decoder0~6                                           ; out              ;
+; |seg|Decoder0~7                                           ; |seg|Decoder0~7                                           ; out              ;
+; |seg|Decoder0~9                                           ; |seg|Decoder0~9                                           ; out              ;
+; |seg|Decoder0~10                                          ; |seg|Decoder0~10                                          ; out              ;
+; |seg|Decoder0~13                                          ; |seg|Decoder0~13                                          ; out              ;
+; |seg|Decoder0~14                                          ; |seg|Decoder0~14                                          ; out              ;
+; |seg|lpm_mux:Mux3|mux_umc:auto_generated|_~0              ; |seg|lpm_mux:Mux3|mux_umc:auto_generated|_~0              ; out0             ;
+; |seg|lpm_mux:Mux3|mux_umc:auto_generated|result_node[0]~0 ; |seg|lpm_mux:Mux3|mux_umc:auto_generated|result_node[0]~0 ; out0             ;
+; |seg|lpm_mux:Mux2|mux_umc:auto_generated|_~0              ; |seg|lpm_mux:Mux2|mux_umc:auto_generated|_~0              ; out0             ;
+; |seg|lpm_mux:Mux2|mux_umc:auto_generated|_~4              ; |seg|lpm_mux:Mux2|mux_umc:auto_generated|_~4              ; out0             ;
+; |seg|lpm_mux:Mux2|mux_umc:auto_generated|result_node[0]~0 ; |seg|lpm_mux:Mux2|mux_umc:auto_generated|result_node[0]~0 ; out0             ;
+; |seg|lpm_mux:Mux2|mux_umc:auto_generated|_~12             ; |seg|lpm_mux:Mux2|mux_umc:auto_generated|_~12             ; out0             ;
+; |seg|lpm_mux:Mux2|mux_umc:auto_generated|result_node[0]~1 ; |seg|lpm_mux:Mux2|mux_umc:auto_generated|result_node[0]~1 ; out0             ;
+; |seg|lpm_mux:Mux2|mux_umc:auto_generated|result_node[0]   ; |seg|lpm_mux:Mux2|mux_umc:auto_generated|result_node[0]   ; out0             ;
+; |seg|lpm_mux:Mux1|mux_umc:auto_generated|_~0              ; |seg|lpm_mux:Mux1|mux_umc:auto_generated|_~0              ; out0             ;
+; |seg|lpm_mux:Mux1|mux_umc:auto_generated|result_node[0]~0 ; |seg|lpm_mux:Mux1|mux_umc:auto_generated|result_node[0]~0 ; out0             ;
+; |seg|lpm_mux:Mux0|mux_umc:auto_generated|_~0              ; |seg|lpm_mux:Mux0|mux_umc:auto_generated|_~0              ; out0             ;
+; |seg|lpm_mux:Mux0|mux_umc:auto_generated|result_node[0]~0 ; |seg|lpm_mux:Mux0|mux_umc:auto_generated|result_node[0]~0 ; out0             ;
++-----------------------------------------------------------+-----------------------------------------------------------+------------------+
+
+
+The following table displays output ports that do not toggle to 0 during simulation.
++------------------------------------------------------------------------------------------------------------------------------------------+
+; Missing 0-Value Coverage                                                                                                                 ;
++-----------------------------------------------------------+-----------------------------------------------------------+------------------+
+; Node Name                                                 ; Output Port Name                                          ; Output Port Type ;
++-----------------------------------------------------------+-----------------------------------------------------------+------------------+
+; |seg|seg_num[1]                                           ; |seg|seg_num[1]                                           ; regout           ;
+; |seg|rst_n                                                ; |seg|rst_n                                                ; out              ;
+; |seg|en                                                   ; |seg|en                                                   ; out              ;
+; |seg|idis_data[3]                                         ; |seg|idis_data[3]                                         ; out              ;
+; |seg|idis_data[4]                                         ; |seg|idis_data[4]                                         ; out              ;
+; |seg|idis_data[5]                                         ; |seg|idis_data[5]                                         ; out              ;
+; |seg|idis_data[6]                                         ; |seg|idis_data[6]                                         ; out              ;
+; |seg|idis_data[7]                                         ; |seg|idis_data[7]                                         ; out              ;
+; |seg|idis_data[8]                                         ; |seg|idis_data[8]                                         ; out              ;
+; |seg|idis_data[9]                                         ; |seg|idis_data[9]                                         ; out              ;
+; |seg|idis_data[10]                                        ; |seg|idis_data[10]                                        ; out              ;
+; |seg|idis_data[11]                                        ; |seg|idis_data[11]                                        ; out              ;
+; |seg|idis_data[12]                                        ; |seg|idis_data[12]                                        ; out              ;
+; |seg|idis_data[13]                                        ; |seg|idis_data[13]                                        ; out              ;
+; |seg|idis_data[14]                                        ; |seg|idis_data[14]                                        ; out              ;
+; |seg|idis_data[15]                                        ; |seg|idis_data[15]                                        ; out              ;
+; |seg|Decoder0~2                                           ; |seg|Decoder0~2                                           ; out              ;
+; |seg|Decoder0~3                                           ; |seg|Decoder0~3                                           ; out              ;
+; |seg|Decoder0~6                                           ; |seg|Decoder0~6                                           ; out              ;
+; |seg|Decoder0~7                                           ; |seg|Decoder0~7                                           ; out              ;
+; |seg|Decoder0~9                                           ; |seg|Decoder0~9                                           ; out              ;
+; |seg|Decoder0~10                                          ; |seg|Decoder0~10                                          ; out              ;
+; |seg|Decoder0~13                                          ; |seg|Decoder0~13                                          ; out              ;
+; |seg|Decoder0~14                                          ; |seg|Decoder0~14                                          ; out              ;
+; |seg|lpm_mux:Mux3|mux_umc:auto_generated|_~0              ; |seg|lpm_mux:Mux3|mux_umc:auto_generated|_~0              ; out0             ;
+; |seg|lpm_mux:Mux3|mux_umc:auto_generated|result_node[0]~0 ; |seg|lpm_mux:Mux3|mux_umc:auto_generated|result_node[0]~0 ; out0             ;
+; |seg|lpm_mux:Mux2|mux_umc:auto_generated|_~0              ; |seg|lpm_mux:Mux2|mux_umc:auto_generated|_~0              ; out0             ;
+; |seg|lpm_mux:Mux2|mux_umc:auto_generated|_~4              ; |seg|lpm_mux:Mux2|mux_umc:auto_generated|_~4              ; out0             ;
+; |seg|lpm_mux:Mux2|mux_umc:auto_generated|result_node[0]~0 ; |seg|lpm_mux:Mux2|mux_umc:auto_generated|result_node[0]~0 ; out0             ;
+; |seg|lpm_mux:Mux2|mux_umc:auto_generated|_~12             ; |seg|lpm_mux:Mux2|mux_umc:auto_generated|_~12             ; out0             ;
+; |seg|lpm_mux:Mux2|mux_umc:auto_generated|result_node[0]~1 ; |seg|lpm_mux:Mux2|mux_umc:auto_generated|result_node[0]~1 ; out0             ;
+; |seg|lpm_mux:Mux2|mux_umc:auto_generated|result_node[0]   ; |seg|lpm_mux:Mux2|mux_umc:auto_generated|result_node[0]   ; out0             ;
+; |seg|lpm_mux:Mux1|mux_umc:auto_generated|_~0              ; |seg|lpm_mux:Mux1|mux_umc:auto_generated|_~0              ; out0             ;
+; |seg|lpm_mux:Mux1|mux_umc:auto_generated|result_node[0]~0 ; |seg|lpm_mux:Mux1|mux_umc:auto_generated|result_node[0]~0 ; out0             ;
+; |seg|lpm_mux:Mux0|mux_umc:auto_generated|_~0              ; |seg|lpm_mux:Mux0|mux_umc:auto_generated|_~0              ; out0             ;
+; |seg|lpm_mux:Mux0|mux_umc:auto_generated|result_node[0]~0 ; |seg|lpm_mux:Mux0|mux_umc:auto_generated|result_node[0]~0 ; out0             ;
++-----------------------------------------------------------+-----------------------------------------------------------+------------------+
+
+
++---------------------+
+; Simulator INI Usage ;
++--------+------------+
+; Option ; Usage      ;
++--------+------------+
+
+
++--------------------+
+; Simulator Messages ;
++--------------------+
+Info: *******************************************************************
+Info: Running Quartus II Simulator
+    Info: Version 9.1 Build 350 03/24/2010 Service Pack 2 SJ Full Version
+    Info: Processing started: Thu Apr 30 19:44:56 2020
+Info: Command: quartus_sim --read_settings_files=on --write_settings_files=off piano -c piano
+Info: Using vector source file "F:/piano/segSimulation.vwf"
+Info: Option to preserve fewer signal transitions to reduce memory requirements is enabled
+    Info: Simulation has been partitioned into sub-simulations according to the maximum transition count determined by the engine. Transitions from memory will be flushed out to disk at the end of each sub-simulation to reduce memory requirements.
+Info: Simulation partitioned into 1 sub-simulations
+Info: Simulation coverage is      94.02 %
+Info: Number of transitions in simulation is 76206
+Info: Quartus II Simulator was successful. 0 errors, 0 warnings
+    Info: Peak virtual memory: 158 megabytes
+    Info: Processing ended: Thu Apr 30 19:44:56 2020
+    Info: Elapsed time: 00:00:00
+    Info: Total CPU time (on all processors): 00:00:01
+
+
