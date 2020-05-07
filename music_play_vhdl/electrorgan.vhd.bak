@@ -1,0 +1,144 @@
+library IEEE; 
+use IEEE.STD_LOGIC_1164.ALL; 
+use IEEE.STD_LOGIC_ARITH.ALL; 
+use IEEE.STD_LOGIC_UNSIGNED.ALL; 
+entity electrorgan is 
+port ( clk :in std_logic; 
+
+--作为顶层文件，它包含实现功能用到的所有端口
+
+key:in std_logic_vector(6 downto 0); 
+mode:in std_logic_vector(1 downto 0); 
+cat:out std_logic_vector(5 downto 0); 
+clr:in std_logic; 
+button:in std_logic; 
+replay:in std_logic; 
+spkout :out std_logic; 
+store1: in std_logic; 
+Atop:OUT std_logic; 
+Btop:OUT std_logic; 
+Ctop:OUT std_logic; 
+Dtop:OUT std_logic; 
+Etop:OUT std_logic; 
+Ftop:OUT std_logic; 
+Gtop:OUT std_logic; 
+DPtop:OUT std_logic; 
+
+lietop:out std_logic_vector(7 downto 0); --列
+comtop:out std_logic_vector(7 downto 0));--行
+
+end electrorgan; 
+
+
+architecture behave of electrorgan is 
+component autoplay 
+port ( clk: in std_logic; 
+
+--这里声明了顶层文件中包含的各模块
+
+clr:in std_logic; 
+index_auto : out std_logic_vector(4 downto 0)); 
+
+end component; 
+component store is 
+port(index_key : in std_logic_vector(4 downto 0); 
+
+clk : in std_logic; 
+clr : in std_logic; 
+store1: in std_logic; 
+replay:in std_logic; 
+index_store : out std_logic_vector(4 downto 0)); 
+
+end component; 
+component fenpin 
+port(clk:in std_logic; 
+
+tone:in integer range 0 to 100000; 
+buzz:out std_logic); 
+
+end component; 
+component lattice 
+port(clk:in std_logic; 
+
+lie:out std_logic_vector(7 downto 0); --列
+com:out std_logic_vector(7 downto 0);--行
+index_auto : in std_logic_vector(4 downto 0); 
+index_key : in std_logic_vector(4 downto 0); 
+clr:in std_logic; 
+replay:in std_logic; 
+index_store : in std_logic_vector(4 downto 0); 
+button :in std_logic); 
+
+End component; 
+component table 
+port(index_auto:in std_logic_vector(4 downto 0); 
+index_key:in std_logic_vector(4 downto 0); 
+button :in std_logic; 
+clr:in std_logic; 
+replay:in std_logic; 
+index_store : in std_logic_vector(4 downto 0); 
+tone:out integer range 0 to 100000 
+); 
+
+end component; 
+component keyplay 
+
+port(key:in std_logic_vector(6 downto 0); 
+
+mode:in std_logic_vector(1 downto 0); 
+index_key:out std_logic_vector(4 downto 0) 
+); 
+
+end component; 
+component seg7 
+PORT( 
+
+mode:in std_logic_vector(1 downto 0); 
+cat:out std_logic_vector(5 downto 0); 
+index_key:IN std_logic_vector(4 downto 0); 
+index_auto:IN std_logic_vector(4 downto 0); 
+replay:in std_logic; 
+index_store : in std_logic_vector(4 downto 0); 
+button :in std_logic; 
+clk:in std_logic; 
+A:OUT std_logic; 
+B:OUT std_logic; 
+C:OUT std_logic; 
+D:OUT std_logic; 
+E:OUT std_logic; 
+F:OUT std_logic; 
+G:OUT std_logic; 
+DP:OUT std_logic 
+); 
+
+--这里声明了各模块的端口和顶层端口的映射关系
+
+end component; 
+signal index_auto_top :std_logic_vector(4 downto 0); 
+signal index_key_top :std_logic_vector(4 downto 0); 
+signal index_store_top :std_logic_vector(4 downto 0); 
+signal tone_top :integer range 0 to 100000; 
+begin 
+u1:autoplay port map(clk=>clk,clr=>clr,index_auto=>index_auto_top); 
+u2:fenpin port map(clk=>clk,tone=>tone_top,buzz=>spkout); 
+u3:table 
+port 
+map(replay=>replay,index_store=>index_store_top,index_auto=>index_auto_top,clr=
+>clr,index_key=>index_key_top,tone=>tone_top,button=>button); 
+u4:keyplay port map(key=>key,index_key=>index_key_top,mode=>mode); 
+u5:seg7 
+port 
+map(replay=>replay,index_key=>index_key_top,cat=>cat,index_store=>index_store_
+top, 
+clk=>clk,button=>button,mode=>mode,index_auto=>index_auto_top,A=>Atop,B=>
+Btop,C=>Ctop,D=>Dtop,E=>Etop,F=>Ftop,G=>Gtop,DP=>DPtop); 
+u6:lattice 
+port 
+map(replay=>replay,index_auto=>index_auto_top,index_store=>index_store_top,clr=
+>clr,index_key=>index_key_top,button=>button,lie=>lietop,com=>comtop,clk=>clk)
+
+; 
+u7:store 
+map(index_key=>index_key_top,clr=>clr,clk=>clk,index_store=>index_store_top, 
+store1=>store1,replay=>replay); 
+end behave; 
